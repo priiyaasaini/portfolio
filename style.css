@@ -66,7 +66,7 @@ html{
   align-items: center;
   justify-content: center;
   /* background:  #a5fae1; */
-  background: #fdf6ec;
+  background: #e0dbff;
 
 
 }
@@ -94,7 +94,7 @@ html{
 .intro{
   min-height: 100vh;
   width: 100%;
-  background: #fff;
+  background: #e0dbff;
   position: relative;
   overflow: hidden;
   padding: 70px 8%;
@@ -159,7 +159,7 @@ html{
   display: inline-block;
   padding: 12px 22px;
   background: #ff5a1f;
-  color: #fff;
+  color: #e0dbff;
   text-decoration: none;
   font-weight: 600;
   border-radius: 12px;
@@ -250,7 +250,7 @@ html{
   height: min(420px, 80vw);
   border-radius: 50%;
   overflow: hidden;
-  background: #eaeaea;
+  background: #e0dbff;
   z-index: 5;
   animation: fadeRight 1.3s ease forwards;
   box-shadow: 0px 18px 45px rgba(0,0,0,0.12);
@@ -316,7 +316,7 @@ html{
 .experience{
   min-height: 100vh;
   width: 100%;
-  background: #fff;
+  background: #e0dbff;
   position: relative;
   overflow: hidden;
   padding: 70px 8%;
@@ -382,7 +382,7 @@ html{
   height: 100%;
   border-radius: 0;
   overflow: hidden;
-  background: #eee;
+  background: #e0dbff;
   position: relative;
 }
 
@@ -497,9 +497,9 @@ html{
    PROJECT SECTION (FINAL FIX)
 ================================ */
 .project{
+  background-color: #e0dbff;
   min-height: 100vh;
   width: 100%;
-  background: transparent;
   position: relative;
   overflow: hidden;
   padding: 70px 8%;
@@ -557,7 +557,7 @@ html{
 .project-img{
   width: 100%;
   overflow: hidden;
-  background: #eee;
+  background: #e0dbff;
   box-shadow: 0px 18px 45px rgba(0,0,0,0.10);
 }
 
@@ -659,7 +659,7 @@ html{
 .thanks{
   min-height: 100vh;
   width: 100%;
-  background: #fff;
+  background: #e0dbff;
   position: relative;
   overflow: hidden;
   padding: 70px 8%;
