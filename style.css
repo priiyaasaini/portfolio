@@ -64,11 +64,6 @@ html{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background:  #a5fae1; */
-  /* background: #2f1b57; */
- /* background-color:  #3E2A47; */
- /* background-color: #E8D8E0;  */
-  /* background:##f8f8f8 ; */
   background: #f8f8f8;
 }
 .dots{
@@ -107,45 +102,9 @@ html{
   height: 100%;
   width: 2px;
   background: transparent;
-  border-left: 2px solid  #f8f8f8;
+  border-left: 2px solid  #0f4662;
   border-radius: 30px;
 } 
-
-/* Side steps */
-/* .side-steps{
-  position: absolute;
-  left: 25px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  z-index: 10;
-} */
-/* 
-.step{
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  border: 1.8px solid #ff5a1f
-;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.95rem;
-  color: #EDEDED;
-  background: #fff;
-  transition: 0.3s;
-}  */
-/* 
-.step.active{
-  background: #ff5a1f
-;
-  color: #fff;
-  transform: scale(1.07);
-  border-color: #ff5a1f
-;
-}  */
 
 .about-btns{
   margin-top: 25px;
@@ -160,12 +119,13 @@ html{
   font-weight: 600;
   border-radius: 12px;
   transition: 0.3s ease;
-  box-shadow: 7px 8px 17px #2f7598;
+  box-shadow: 4px 4px 12px #2f7598;
 }
 
 .btn-resume:hover{
   transform: translateY(-3px);
-  box-shadow: 0px 20px 40px rgba(154, 138, 132, 0.35);
+  box-shadow: 4px 6px 21px 9px #2f7598;
+;
 }
 
 /* Orange arc top (big curve) */
@@ -177,8 +137,7 @@ html{
   width: 620px;
   height: 620px;
   border-radius: 50%;
-  border: 12px solid  #E8D8E0
-;
+  border: 12px solid  #E8D8E0;
   border-left-color: transparent;
   border-bottom-color: transparent;
   z-index: 1;
@@ -233,13 +192,6 @@ html{
   animation: fadeUp 1.4s ease forwards;
 }
 
-/* Right image styling */
-.intro-image{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .image-circle{
   width: min(420px, 80vw);
@@ -249,17 +201,16 @@ html{
   background: #f8f8f8;
   z-index: 5;
   animation: fadeRight 1.3s ease forwards;
-  box-shadow: 0px 18px 45px rgba(0,0,0,0.12);
+ box-shadow:
+    0px 25px 60px rgba(0, 0, 0, 0.22),
+    0px 10px 25px #0f4662,
+    0px 0px 0px 8px rgba(255, 255, 255, 0.7);
 }
-
 .image-circle img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-
-
 /* ---------- Animations ---------- */
 @keyframes fadeLeft{
   from{ opacity: 0; transform: translateX(-30px); }
@@ -455,11 +406,6 @@ html{
     grid-auto-rows: 160px;
     margin-top: 30px;
   }
-
-  .side-steps,
-  .intro-left-curve{
-    display: none; /* hide side nav on small screens */
-  }
 }
 
 @media (max-width: 600px){
@@ -496,21 +442,6 @@ html{
   display: flex;
   align-items: center;
 }
-
-/* Light arc top-right */
-/* .project-top-right-arc{
-  position: absolute;
-  top: -260px;
-  right: -280px;
-  width: 560px;
-  height: 560px;
-  border-radius: 50%;
-  border: 18px solid rgba(255, 155, 120, 0.20);
-  border-left-color: transparent;
-  border-bottom-color: transparent;
-  z-index: 1;
-  animation: float 7s ease-in-out infinite;
-} */
 
 /* Layout */
 .project-container{
@@ -549,6 +480,7 @@ html{
   overflow: hidden;
   background: #f8f8f8;
   box-shadow: 0px 18px 45px rgba(0,0,0,0.10);
+   border: 3px solid #0f4662;
 }
 
 /* Images inside */
