@@ -22,7 +22,7 @@ html{
   font-size: clamp(3.5rem, 10vw, 7.5rem);
   font-weight: 800;
   letter-spacing: 6px;
-  color: #111;
+  color: #0f4662;
   line-height: 1;
 }
 
@@ -30,15 +30,14 @@ html{
    font-family: "Lavishly Yours", cursive;
   font-size: clamp(4.8rem, 7vw, 5.6rem);
   font-weight: 300;
-  color: #ff5a1f
-;
+  color: #6c777f;
   margin-top: -100px;        /* ✅ overlap */
   transform: rotate(-8deg); /* stylish look */
 }
 
 @media (max-width: 500px){ 
     .main-word{
-    font-size: clamp(2.8rem, 8vw, 5.2rem); 
+    font-size: clamp(4.8rem, 8vw, 5.2rem); 
     }/* adjust size on small screens */  
   .name-word{
      font-size: clamp(1.8rem, 7vw, 5.6rem);
@@ -66,12 +65,12 @@ html{
   align-items: center;
   justify-content: center;
   /* background:  #a5fae1; */
-  background: #e0dbff;
-
-
+  /* background: #2f1b57; */
+ /* background-color:  #3E2A47; */
+ /* background-color: #E8D8E0;  */
+  /* background:##f8f8f8 ; */
+  background: #f8f8f8;
 }
-
-/* Dots bottom-left */
 .dots{
   position: absolute;
   bottom: 25px;
@@ -81,20 +80,18 @@ html{
   z-index: 5;
   animation: fadeIn 2s ease forwards;
 }
-
 .dots span{
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #cbd5e1#fa591ec6;
+  background: #cbd5e1  #E8D8E0;
 }
-
 /* ********************* about section ************************* */
 /* ---------- INTRO SECTION ---------- */
 .intro{
   min-height: 100vh;
   width: 100%;
-  background: #e0dbff;
+  background: #f8f8f8;
   position: relative;
   overflow: hidden;
   padding: 70px 8%;
@@ -110,8 +107,7 @@ html{
   height: 100%;
   width: 2px;
   background: transparent;
-  border-left: 2px solid #ff5a1f
-;
+  border-left: 2px solid  #f8f8f8;
   border-radius: 30px;
 } 
 
@@ -137,7 +133,7 @@ html{
   align-items: center;
   justify-content: center;
   font-size: 0.95rem;
-  color: #111;
+  color: #EDEDED;
   background: #fff;
   transition: 0.3s;
 }  */
@@ -158,18 +154,18 @@ html{
 .btn-resume{
   display: inline-block;
   padding: 12px 22px;
-  background: #ff5a1f;
-  color: #e0dbff;
+  background:  #f8f8f8;
+  color: #0f4662;
   text-decoration: none;
   font-weight: 600;
   border-radius: 12px;
   transition: 0.3s ease;
-  box-shadow: 0px 14px 30px rgba(255, 90, 31, 0.25);
+  box-shadow: 7px 8px 17px #2f7598;
 }
 
 .btn-resume:hover{
   transform: translateY(-3px);
-  box-shadow: 0px 20px 40px rgba(255, 90, 31, 0.35);
+  box-shadow: 0px 20px 40px rgba(154, 138, 132, 0.35);
 }
 
 /* Orange arc top (big curve) */
@@ -181,7 +177,7 @@ html{
   width: 620px;
   height: 620px;
   border-radius: 50%;
-  border: 12px solid #ff5a1f
+  border: 12px solid  #E8D8E0
 ;
   border-left-color: transparent;
   border-bottom-color: transparent;
@@ -203,7 +199,7 @@ html{
 .intro-title{
   font-size: clamp(2.8rem, 7vw, 6rem);
   font-weight: 700;
-  color: #111;
+  color: #0f4662;
   line-height: 1;
   animation: fadeLeft 1s ease forwards;
 }
@@ -212,7 +208,7 @@ html{
   font-size: 1.6rem;
   font-weight: 500;
   margin-top: 18px;
-  color: #111;
+  color: #0f4662;
   animation: fadeLeft 1.2s ease forwards;
 }
 
@@ -224,7 +220,7 @@ html{
   font-size: 1.1rem;
   margin-top: 4px;
   font-style: italic;
-  color: #333;
+  color: #0f4662;
   animation: fadeLeft 1.3s ease forwards;
 }
 
@@ -250,7 +246,7 @@ html{
   height: min(420px, 80vw);
   border-radius: 50%;
   overflow: hidden;
-  background: #e0dbff;
+  background: #f8f8f8;
   z-index: 5;
   animation: fadeRight 1.3s ease forwards;
   box-shadow: 0px 18px 45px rgba(0,0,0,0.12);
@@ -291,10 +287,7 @@ html{
   .intro-left-curve{
     display: none; /* hide on small devices for clean UI */
   }
-
-  
 }
-
 @media (max-width: 500px){
   .intro{
     padding: 60px 6%;
@@ -316,7 +309,7 @@ html{
 .experience{
   min-height: 100vh;
   width: 100%;
-  background: #e0dbff;
+  background: #f8f8f8;
   position: relative;
   overflow: hidden;
   padding: 70px 8%;
@@ -332,16 +325,14 @@ html{
   align-items: center;
   z-index: 5;
 }
-
 /* LEFT TEXT */
 .exp-left{
   animation: fadeLeft 1s ease forwards;
 }
-
 .exp-title{
   font-size: clamp(2.6rem, 5vw, 4.6rem);
   font-weight: 700;
-  color: #111;
+  color: #0f4662;
   margin-bottom: 35px;
 }
 
@@ -352,7 +343,7 @@ html{
 .exp-item h3{
   font-size: 1.6rem;
   font-weight: 600;
-  color: #111;
+  color: #0f4662;
   margin-bottom: 10px;
 }
 
@@ -382,7 +373,7 @@ html{
   height: 100%;
   border-radius: 0;
   overflow: hidden;
-  background: #e0dbff;
+  background: #f8f8f8;
   position: relative;
 }
 
@@ -406,8 +397,7 @@ html{
 .orange-box{
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  background: #ff5a1f
-;
+  background:  #E8D8E0;
 }
 
 .tall{
@@ -497,7 +487,7 @@ html{
    PROJECT SECTION (FINAL FIX)
 ================================ */
 .project{
-  background-color: #e0dbff;
+  background-color: #f8f8f8;
   min-height: 100vh;
   width: 100%;
   position: relative;
@@ -540,7 +530,7 @@ html{
 .project-title{
   font-size: clamp(2.8rem, 6vw, 4.6rem);
   font-weight: 800;
-  color: #111;
+  color: #0f4662;
   margin-top: 40px;
 }
 
@@ -557,7 +547,7 @@ html{
 .project-img{
   width: 100%;
   overflow: hidden;
-  background: #e0dbff;
+  background: #f8f8f8;
   box-shadow: 0px 18px 45px rgba(0,0,0,0.10);
 }
 
@@ -659,7 +649,7 @@ html{
 .thanks{
   min-height: 100vh;
   width: 100%;
-  background: #e0dbff;
+  background: #f8f8f8;
   position: relative;
   overflow: hidden;
   padding: 70px 8%;
@@ -682,7 +672,7 @@ html{
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #ff5a1f
+  background: #0f4662
 ;
 }
 
@@ -716,7 +706,7 @@ html{
   width: min(420px, 85vw);
   height: 600px;
   border-radius: 220px;
-  border: 3px solid #ff5a1f
+  border: 3px solid #0f4662
 ;
   overflow: hidden;
   box-shadow: 0px 18px 45px rgba(0,0,0,0.12);
@@ -741,14 +731,14 @@ html{
   font-family: "Lavishly Yours", cursive;
  
   line-height: 0.95;
-  color: #ff5a1f;
+  color: #0f4662;
   margin-bottom: 25px;
 }
 
 .contact-heading{
   font-size: 1rem;
   font-weight: 500;
-  color: #111;
+  color: #0f4662;
   margin-bottom: 22px;
 }
 
@@ -768,7 +758,7 @@ html{
 
 .label{
   font-weight: 700;
-  color: #111;
+  color: #0f4662;
 }
 
 .value{
