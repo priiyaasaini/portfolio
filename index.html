@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,159 +7,148 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-
 <body>
-
-
-  <!-- HERO / COVER PAGE -->
-  <section class="cover" id="home">
-
-
-    <!-- Content -->
-    <div class="cover-content">
-      <h1 class="main-word">PRIYA SAINI</h1>
-      <h4 class="name-word">portfolio</h4>
-      <p class="tagline">Get to know me </p>
-    </div>
-
-
-    <!-- Bottom dots -->
-    <div class="dots">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
+  <section class="hero" id="home">
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+    <!-- Navbar -->
+    <header class="hero-header">
+      <div class="logo">PORTFOLIO</div>
+      <!-- Social Icons -->
+      <div class="hero-socials" id="heroSocials">
+        <a href="https://linkedin.com/in/your-link" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/your-username" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:yourmail@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      <!-- Hamburger -->
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </header>
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <!-- Content -->
+      <div class="cover-content">
+        <div class="waviy">
+          <span style="--i:1">P</span>
+          <span style="--i:2">R</span>
+          <span style="--i:3">I</span>
+          <span style="--i:4">Y</span>
+          <span style="--i:5">A</span>
+          <span style="--i:5"></span>
+          <span style="--i:5"></span>
+          <span style="--i:6">S</span>
+          <span style="--i:7">A</span>
+          <span style="--i:8">I</span>
+          <span style="--i:9">N</span>
+          <span style="--i:10">I</span>
+        </div>
   </section>
-
   <section class="intro" id="intro">
-
-
     <div class="intro-container">
-
       <!-- Left text content -->
       <div class="intro-text">
         <h2 class="intro-title">Hello,</h2>
-
         <div class="intro-subtitle">
           <h3>I’m <span class="bold">Priya Saini</span></h3>
           <p class="role">Software Developer</p>
         </div>
-
         <p class="intro-desc">
           I am a passionate developer focused on building clean, user-friendly,
           and responsive web applications. I love working with frontend, creating
           smooth UI animations, and turning designs into real websites.
         </p>
-
         <p class="intro-desc">
           Currently improving my DSA + Projects to crack a high-paying role. 🚀
         </p>
       </div>
-
       <!-- Right Image -->
       <div class="intro-image">
         <div class="image-circle">
           <img src="pictures/white profile photo.jpeg" alt="Profile" />
         </div>
-
-
       </div>
-
       <div class="about-btns">
         <a href="resume/Priya_Saini_Resume.pdf" download class="btn-resume">
           Download Resume
         </a>
       </div>
     </div>
-
   </section>
-
-
   <section class="experience" id="experience">
-
-
-
     <div class="exp-container">
-
       <!-- LEFT CONTENT -->
       <div class="exp-left">
         <h2 class="exp-title">Experience</h2>
-
-        <div class="exp-item">
-          <h3>PlanetSpark (Freelance)</h3>
-          <p class="exp-desc">
-            Worked as a Communication Skills Trainer where I conducted demo sessions,
-            guided students, and improved their confidence & public speaking.
-          </p>
-        </div>
-
         <div class="exp-item">
           <h3>Amdocs (1 Year)</h3>
           <p class="exp-desc">
             Worked on enterprise applications, enhanced backend APIs, fixed issues,
-            and improved system performance while collaborating with teams.
+            and improved system performance while collaborating with teams.<br>
+            Developed and maintained internal tools and web applications using java springBoot and Node.js.
           </p>
         </div>
+        <!-- <div class="exp-item">
+          <h3>ThinkNext — Android Development Intern (Java) </h3>
+          <p class="exp-desc">
+            Built Android apps using Java, Android Studio, XML<br>
+            Designed UI screens and implemented app features<br>
+            Integrated APIs for dynamic data<br>
+            Fixed bugs and improved app performance<br>
+            Worked with team and delivered tasks on time
+          </p>
+        </div> -->
       </div>
-
       <!-- RIGHT IMAGE GRID -->
       <div class="exp-right">
         <div class="grid">
-
-          <div class="img-card big">
-            <img src="pictures/cat.jpg" alt="">
+          <div class="img-card ">
+            <img src="pictures/pune1.jpg" alt="">
           </div>
-
-          <div class="img-card orange-box"></div>
-          <!-- slideshow  -->
-          <div class="img-card tall slideshow" id="tallSlideshow">
+          <div class="img-card ">
+            <img src="pictures/AmdocsImg.jpg" alt="">
+          </div>
+          
+        </div>
+           <!-- slideshow  -->
+          <!-- <div class="img-card orange-box"></div>
+           <div class="img-card tall slideshow" id="tallSlideshow">
             <img class="slide active" src="pictures/pune2.jpg" alt="Slide 1">
             <img class="slide" src="pictures/pune3.jpg" alt="Slide 2">
             <img class="slide" src="pictures/pune4.jpg" alt="Slide 3">
             <img class="slide" src="pictures/pune5.jpg" alt="Slide 4">
-          </div>
-
-          <div class="img-card">
-            <img src="pictures/pune6.jpg" alt="">
-          </div>
-
-          <div class="img-card wide">
-            <img src="pictures/pune1.jpg" alt="">
-          </div>
-
-        </div>
+          </div> 
+        </div> -->
       </div>
-
     </div>
   </section>
   <section class="project" id="project2">
     <!-- Left curve line -->
     <div class="project-container">
-
       <!-- LEFT SIDE title -->
       <div class="project-left">
         <h2 class="project-title">Project 2</h2>
       </div>
-
       <!-- RIGHT SIDE layout -->
       <div class="project-right">
-
         <!-- Top image -->
         <div class="project-img top-img">
           <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1300&auto=format&fit=crop"
             alt="Project Image" />
         </div>
       </div>
-
-
       <!-- Bottom large image -->
       <div class="project-img bottom-img">
         <img src="https://images.unsplash.com/photo-1565183997392-2f6f122e5912?q=80&w=1300&auto=format&fit=crop"
           alt="Project Image" />
       </div>
-
       <!-- Text -->
       <div class="project-text">
         <p>
@@ -168,36 +156,20 @@
           design website. It includes responsive UI layouts, smooth animations,
           and modern typography.
         </p>
-
         <p>
           My role included designing the layout, implementing responsive sections,
           and ensuring cross-device consistency.
         </p>
       </div>
-
     </div>
-
-
     </div>
-
   </section>
-
   <section class="thanks" id="contact">
-
-
-    <!-- Left curve line -->
-    <div class="intro-left-curve"></div>
-
     <!-- Top right dots -->
     <div class="top-dots">
       <span></span><span></span><span></span>
     </div>
-
-    <!-- Right soft arc -->
-    <div class="thanks-right-arc"></div>
-
     <div class="thanks-container">
-
       <!-- LEFT IMAGE FRAME -->
       <div class="thanks-image">
         <div class="thanks-frame">
@@ -205,37 +177,29 @@
             alt="Work" />
         </div>
       </div>
-
       <!-- RIGHT CONTENT -->
       <div class="thanks-content">
         <h2 class="thanks-title">
           Thanks for scrolling through my portfolio!
         </h2>
-
         <h3 class="contact-heading">Contact Details</h3>
-
         <div class="contact-list">
           <div class="contact-item">
             <span class="label">Phone :</span>
             <span class="value">+91 98765 43210</span>
           </div>
-
           <div class="contact-item">
             <span class="label">Address :</span>
             <span class="value">Gurgaon, Haryana, India</span>
           </div>
-
           <div class="contact-item">
             <span class="label">Email :</span>
             <span class="value">priya.work26@gmail.com</span>
           </div>
         </div>
-
       </div>
-
     </div>
   </section>
-
   <script src="script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>

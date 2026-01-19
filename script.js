@@ -1,5 +1,36 @@
 // You can add smooth scroll or button scroll later
 // For now we keep hero page clean
+// main page 
+// ✅ Mobile menu toggle
+const menuBtn = document.getElementById("menuBtn");
+// const heroNav = document.getElementById("heroNav");
+
+// menuBtn.addEventListener("click", () => {
+//   heroNav.classList.toggle("active");
+// });
+
+// ✅ Close menu on click
+document.querySelectorAll(".hero-nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    heroNav.classList.remove("active");
+  });
+});
+
+const heroSocials = document.getElementById("heroSocials");
+
+menuBtn.addEventListener("click", () => {
+  heroSocials.classList.toggle("active");
+});
+document.addEventListener("click", (e) => {
+  if (!menuBtn.contains(e.target) && !heroSocials.contains(e.target)) {
+    heroSocials.classList.remove("active");
+  }
+});
+
+
+// ********************************************************************************************************
+// ********************************************************************************************************
+
 
 console.log("Cover loaded ✅");
 // Experience section active step
