@@ -52,7 +52,7 @@
 
 @media (max-width: 500px) {
   .waviy{
-    font-size:1.7em;
+    font-size:2em;
   }
 .subtitle{
   font-size: clamp(25px, 2.5vw, 32px);
