@@ -1,14 +1,5 @@
-// You can add smooth scroll or button scroll later
-// For now we keep hero page clean
-// main page 
-// ✅ Mobile menu toggle
+
 const menuBtn = document.getElementById("menuBtn");
-// const heroNav = document.getElementById("heroNav");
-
-// menuBtn.addEventListener("click", () => {
-//   heroNav.classList.toggle("active");
-// });
-
 // ✅ Close menu on click
 document.querySelectorAll(".hero-nav a").forEach(link => {
   link.addEventListener("click", () => {
@@ -56,59 +47,59 @@ expObserver.observe(expSection);
 // ===============================
 // Tall Slideshow JS
 // ===============================
-const slideshow = document.getElementById("tallSlideshow");
+// const slideshow = document.getElementById("tallSlideshow");
 
-if (slideshow) {
-  const slides = slideshow.querySelectorAll(".slide");
-  let index = 0;
+// if (slideshow) {
+//   const slides = slideshow.querySelectorAll(".slide");
+//   let index = 0;
 
-  setInterval(() => {
-    slides[index].classList.remove("active");
-    index = (index + 1) % slides.length;
-    slides[index].classList.add("active");
-  }, 2500); // change slide every 2.5 sec
-}
+//   setInterval(() => {
+//     slides[index].classList.remove("active");
+//     index = (index + 1) % slides.length;
+//     slides[index].classList.add("active");
+//   }, 2500); // change slide every 2.5 sec
+// }
 // ===============================
 // ===============================  
 
 // Project section active step
-const projectSection = document.querySelector("#project2");
-const pSteps = document.querySelectorAll(".project .step");
+// const projectSection = document.querySelector("#project2");
+// const pSteps = document.querySelectorAll(".project .step");
 
-const projectObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        pSteps.forEach((s) => s.classList.remove("active"));
-        pSteps[4].classList.add("active"); // step 5
-      }
-    });
-  },
-  { threshold: 0.5 }
-);
+// const projectObserver = new IntersectionObserver(
+//   (entries) => {
+//     entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//         pSteps.forEach((s) => s.classList.remove("active"));
+//         pSteps[4].classList.add("active"); // step 5
+//       }
+//     });
+//   },
+//   { threshold: 0.5 }
+// );
 
-projectObserver.observe(projectSection);
+// projectObserver.observe(projectSection);
 // Thanks section active step 9
-const thanksSection = document.querySelector("#contact");
-const tSteps = document.querySelectorAll(".thanks .step");
+// const thanksSection = document.querySelector("#contact");
+// const tSteps = document.querySelectorAll(".thanks .step");
 
-const thanksObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        tSteps.forEach((s) => s.classList.remove("active"));
-        tSteps[8].classList.add("active"); // step 9
-      }
-    });
-  },
-  { threshold: 0.5 }
-);
+// const thanksObserver = new IntersectionObserver(
+//   (entries) => {
+//     entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//         tSteps.forEach((s) => s.classList.remove("active"));
+//         tSteps[8].classList.add("active"); // step 9
+//       }
+//     });
+//   },
+//   { threshold: 0.5 }
+// );
 
-thanksObserver.observe(thanksSection);
+// thanksObserver.observe(thanksSection);
 
-AOS.init({
-  duration: 900,   // smooth speed
-  once: true,      // animation only once
-  easing: "ease-in-out",
-});
+// AOS.init({
+//   duration: 900,   // smooth speed
+//   once: true,      // animation only once
+//   easing: "ease-in-out",
+// });
 
