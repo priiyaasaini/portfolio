@@ -8,9 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="project.css">
+  <link rel="stylesheet" href="skill.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
+
+  <!--************************ FIRST MAIN PAGE  ****************************** -->
   <section class="hero" id="home">
     <!-- Overlay -->
     <div class="hero-overlay"></div>
@@ -60,119 +65,190 @@
 
 
   </section>
-  <section class="intro" id="intro">
-    <div class="intro-container">
-      <!-- Left text content -->
-      <div class="intro-text">
-        <h2 class="intro-title">Hello,</h2>
-        <div class="intro-subtitle">
-          <h3>I’m <span class="bold">Priya Saini</span></h3>
-          <p class="role">Software Developer</p>
-        </div>
-        <p class="intro-desc">
-          I am a passionate developer focused on building clean, user-friendly,
-          and responsive web applications. I love working with frontend, creating
-          smooth UI animations, and turning designs into real websites.
-        </p>
-        <p class="intro-desc">
-          Currently improving my DSA + Projects to crack a high-paying role. 🚀
-        </p>
-      </div>
-      <!-- Right Image -->
-      <div class="intro-image">
-        <div class="image-circle">
-          <img src="pictures/white profile photo.jpeg" alt="Profile" />
-        </div>
-      </div>
-      <div class="about-btns">
-        <a href="resume/Priya_Saini_Resume.pdf" download class="btn-resume">
-          Download Resume
-        </a>
-      </div>
+    <!--************************ ABOUT PAGE  ****************************** -->
+   <section class="about-section" id="about">
+  <div class="about-container">
+    <!-- Left Image -->
+    <div class="about-image">
+      <img src="pictures/white profile photo.jpeg" alt="Priya Saini">
     </div>
-  </section>
-  <section class="experience" id="experience">
-    <div class="exp-container">
-      <!-- LEFT CONTENT -->
-      <div class="exp-left">
-        <h2 class="exp-title">Experience</h2>
-        <div class="exp-item">
-          <h3>Amdocs (1 Year)</h3>
-          <p class="exp-desc">
-            Worked on enterprise applications, enhanced backend APIs, fixed issues,
-            and improved system performance while collaborating with teams.<br>
-            Developed and maintained internal tools and web applications using java springBoot and Node.js.
-          </p>
-        </div>
-        <!-- <div class="exp-item">
-          <h3>ThinkNext — Android Development Intern (Java) </h3>
-          <p class="exp-desc">
-            Built Android apps using Java, Android Studio, XML<br>
-            Designed UI screens and implemented app features<br>
-            Integrated APIs for dynamic data<br>
-            Fixed bugs and improved app performance<br>
-            Worked with team and delivered tasks on time
-          </p>
-        </div> -->
+
+    <!-- Right Content -->
+    <div class="about-content">
+      <h2 class="about-title">About Me</h2>
+
+      <p>
+        I am a Software Developer with experience in building clean, responsive,
+        and scalable web applications. I enjoy solving real-world problems and
+        continuously improving my technical skills.
+      </p>
+
+      <p>
+        I have worked with Java, Spring Boot, Python, and modern web technologies,
+        and I love creating user-friendly interfaces backed by efficient logic.
+        Currently, I am focused on building strong projects and growing as a
+        developer.
+      </p>
+      
+  <button class="resumeBtn">Download Resume
+<i class="fa-solid fa-download"></i>
+  </button>
+    </div>
+
+  </div>
+</section>
+
+    <!--************************ PROJECT PAGE  ****************************** -->
+  <section class="projects-section" id="projects">
+  <h2 class="projects-title">Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- ✅ Project Card 1 -->
+    <div class="project-card">
+      <div class="project-img">
+        <img src="pictures/cat.jpg" alt="Smart ATS Resume Checker" />
       </div>
-      <!-- RIGHT IMAGE GRID -->
-      <div class="exp-right">
-        <div class="grid">
-          <div class="img-card ">
-            <img src="pictures/pune1.jpg" alt="">
+
+      <div class="project-content">
+        <h3 class="project-name">Smart ATS Resume Checker</h3>
+
+        <p class="project-desc">
+          An AI-powered ATS resume checker built with Streamlit and Google Gemini
+          that analyzes resumes against job descriptions and highlights missing keywords.
+        </p>
+
+        <div class="project-stack">
+          <h4>Stack</h4>
+          <div class="stack-tags">
+            <span>Python</span>
+            <span>Streamlit</span>
+            <span>Gemini AI</span>
+            <span>PyPDF2</span>
           </div>
-          <div class="img-card ">
-            <img src="pictures/AmdocsImg.jpg" alt="">
+        </div>
+
+        <div class="project-buttons">
+          <a href="https://github.com/your-username/smart-ats" target="_blank" class="btn-code">
+            Source Code
+          </a>
+          <a href="https://your-live-link.com" target="_blank" class="btn-live">
+            Live Project
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ✅ Project Card 2 -->
+    <div class="project-card">
+      <div class="project-img">
+        <img src="pictures/pune1.jpg" alt="Portfolio Website" />
+      </div>
+
+      <div class="project-content">
+        <h3 class="project-name">Portfolio Website</h3>
+
+        <p class="project-desc">
+          A responsive personal portfolio website with smooth UI, animations, social
+          handles, and clean modern layout.
+        </p>
+
+        <div class="project-stack">
+          <h4>Stack</h4>
+          <div class="stack-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
           </div>
-          
         </div>
-           <!-- slideshow  -->
-          <!-- <div class="img-card orange-box"></div>
-           <div class="img-card tall slideshow" id="tallSlideshow">
-            <img class="slide active" src="pictures/pune2.jpg" alt="Slide 1">
-            <img class="slide" src="pictures/pune3.jpg" alt="Slide 2">
-            <img class="slide" src="pictures/pune4.jpg" alt="Slide 3">
-            <img class="slide" src="pictures/pune5.jpg" alt="Slide 4">
-          </div> 
-        </div> -->
-      </div>
-    </div>
-  </section>
-  <section class="project" id="project2">
-    <!-- Left curve line -->
-    <div class="project-container">
-      <!-- LEFT SIDE title -->
-      <div class="project-left">
-        <h2 class="project-title">Project 2</h2>
-      </div>
-      <!-- RIGHT SIDE layout -->
-      <div class="project-right">
-        <!-- Top image -->
-        <div class="project-img top-img">
-          <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1300&auto=format&fit=crop"
-            alt="Project Image" />
+
+        <div class="project-buttons">
+          <a href="https://github.com/your-username/portfolio" target="_blank" class="btn-code">
+            Source Code
+          </a>
+          <a href="https://your-live-link.com" target="_blank" class="btn-live">
+            Live Project
+          </a>
         </div>
       </div>
-      <!-- Bottom large image -->
-      <div class="project-img bottom-img">
-        <img src="https://images.unsplash.com/photo-1565183997392-2f6f122e5912?q=80&w=1300&auto=format&fit=crop"
-          alt="Project Image" />
-      </div>
-      <!-- Text -->
-      <div class="project-text">
-        <p>
-          This project focuses on building a clean and elegant interior space
-          design website. It includes responsive UI layouts, smooth animations,
-          and modern typography.
-        </p>
-        <p>
-          My role included designing the layout, implementing responsive sections,
-          and ensuring cross-device consistency.
-        </p>
+    </div>
+
+  </div>
+</section>
+
+    <!--************************ SKILL AND EXPRIENCE   ****************************** -->  
+
+<section class="skills-exp" id="skills">
+  <div class="skills-exp-container">
+
+    <!-- Heading -->
+    <div class="skills-exp-header">
+      <h2>Skills & Experience</h2>
+      <p>Tech stack I work with + my experience timeline</p>
+    </div>
+
+    <!-- Skills -->
+    <div class="skills-block">
+      <h3 class="block-title">Skills</h3>
+
+      <div class="skills-grid">
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Spring Boot</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Streamlit</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">GitHub</span>
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">SQL</span>
       </div>
     </div>
+
+    <!-- Experience Timeline -->
+    <div class="exp-block">
+      <h3 class="block-title">Experience</h3>
+
+      <div class="timeline">
+
+        <!-- Experience 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Amdocs — Software Developer</h4>
+            <span class="timeline-date">1 Year</span>
+            <ul>
+              <li>Worked on enterprise applications and backend APIs.</li>
+              <li>Fixed production issues and improved performance.</li>
+              <li>Collaborated with teams and delivered tasks on time.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>ThinkNext — Android Development Intern (Java)</h4>
+            <span class="timeline-date">Internship</span>
+            <ul>
+              <li>Built Android apps using Java, XML and Android Studio.</li>
+              <li>Designed UI screens and implemented app features.</li>
+              <li>Integrated APIs and fixed bugs for better performance.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </section>
+
+  </div>
+</section>
+
+
+
   <section class="thanks" id="contact">
     <!-- Top right dots -->
     <div class="top-dots">

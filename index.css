@@ -28,9 +28,9 @@
 }
 
 .subtitle{
-  margin-top: 3rem;
+  margin-top: 4rem;
   font-size: clamp(37px, 2.5vw, 32px);
-  font-weight: 600;
+  /* font-weight: 500; */
   letter-spacing: 0.7px;
   font-family: "Lavishly Yours", "cursive";
   /* line-height: 0.95; */
