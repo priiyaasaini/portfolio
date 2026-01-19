@@ -39,7 +39,7 @@
 
 @media (max-width: 500px) {
   .waviy{
-    font-size:31px;
+    font-size:1.7em;
   }
 
 
@@ -106,7 +106,7 @@
   font-size: 26px;
   background: transparent;
   border: none;
-  color: #0f4662;
+  color: #000000;
   cursor: pointer;
 }
 
@@ -136,18 +136,19 @@
 /* ✅ Social icons default (desktop) */
 .hero-socials {
   display: flex;
-  gap: 16px;
+  align-items: center;
+  gap: 12px;
 }
 
 .hero-socials a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15);
+  background: #0f4662;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0f4662;
+  color: #ffffff;
   font-size: 18px;
   text-decoration: none;
   transition: 0.3s ease;
@@ -155,8 +156,8 @@
 }
 
 .hero-socials a:hover {
-  background: rgba(20, 28, 45, 0.836);
-  color: white;
+  background: rgba(193, 203, 223, 0.836);
+  color: rgba(20, 28, 45, 0.836);
   transform: translateY(-3px);
 }
 
@@ -166,7 +167,7 @@
   font-size: 26px;
   background: transparent;
   border: none;
-  color: white;
+  color: #0f4662;
   cursor: pointer;
 }
 
@@ -181,17 +182,15 @@
   /* hide socials by default */
   .hero-socials {
     position: absolute;
-    top: 70px;
-    right: 20px;
-
-    display: none;
-    flex-direction: column;
-    gap: 14px;
-
-    padding: 14px;
-    border-radius: 16px;
-    background: rgba(0, 0, 0, 0.65);
-    backdrop-filter: blur(12px);
+        top: 57px;
+        right: 37px;
+        display: none;
+        flex-direction: column;
+        gap: 14px;
+        padding: 14px;
+        border-radius: 16px;
+        background: #0f46620a;
+        backdrop-filter: blur(12px);
   }
 
   /* when active -> show socials */

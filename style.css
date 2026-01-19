@@ -97,7 +97,7 @@ html{
 }
 
 /* Orange arc top (big curve) */
-.intro-top-arc{
+/* .intro-top-arc{
   position: absolute;
   top: -320px;
   left: 50%;
@@ -110,7 +110,7 @@ html{
   border-bottom-color: transparent;
   z-index: 1;
   animation: float 7s ease-in-out infinite;
-}
+} */
 
 /* Container */
 .intro-container{
@@ -192,6 +192,12 @@ html{
 
 /* ---------- Responsive ---------- */
 @media (max-width: 950px){
+  .intro-image{
+      display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  }
   .intro-container{
     grid-template-columns: 1fr;
     text-align: center;
