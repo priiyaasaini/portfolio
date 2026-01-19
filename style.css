@@ -640,9 +640,9 @@ html{
 }
 
 .thanks-title{
-  font-size: clamp(2.2rem, 6vw, 2.2rem);
+  font-size: clamp(0.85em, 6vw, 2.2rem);
   font-weight: 500;
-  font-family: "Lavishly Yours", cursive;
+  /* font-family: "Lavishly Yours", cursive; */
  
   line-height: 0.95;
   color: #0f4662;

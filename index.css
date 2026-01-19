@@ -23,6 +23,19 @@
   animation-delay: calc(.1s * var(--i));
 
 }
+  .cover-content{
+  text-align: center;
+}
+
+.subtitle{
+  margin-top: 3rem;
+  font-size: clamp(37px, 2.5vw, 32px);
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  font-family: "Lavishly Yours", "cursive";
+  /* line-height: 0.95; */
+  color: #0f4662;
+}
 
 @keyframes waviy {
 
@@ -41,6 +54,9 @@
   .waviy{
     font-size:1.7em;
   }
+.subtitle{
+  font-size: clamp(25px, 2.5vw, 32px);
+}
 
 
 }
