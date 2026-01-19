@@ -1,0 +1,261 @@
+/* ✅ RESET */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+/* ANIMATES TEXT */
+
+.waviy {
+  position: relative;
+  font-size: 60px;
+  font-weight: bold;
+  color: #0f4662;
+}
+  .cover-content{
+  text-align: center;
+}
+
+.subtitle{
+  margin-top: 4rem;
+  font-size: clamp(37px, 2.5vw, 32px);
+  letter-spacing: 0.7px;
+  font-family: "Lavishly Yours", "cursive";
+  color: #0f4662;
+}
+
+
+@media (max-width: 500px) {
+  .waviy{
+    font-size:2.5em;
+  }
+.subtitle{
+  font-size: clamp(25px, 2.5vw, 32px);
+}
+}
+@media (max-width: 600px) {
+  .waviy{
+    font-size:2.5em;
+  }
+.subtitle{
+  font-size: clamp(25px, 2.5vw, 32px);
+}
+}
+
+/* ✅ OVERLAY */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+/* ✅ HEADER NAVBAR */
+.hero-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  color: #0f4662;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  backdrop-filter: blur(10px);
+}
+
+/* ✅ NAV LINKS */
+.hero-nav {
+  display: flex;
+  gap: 25px;
+}
+
+.hero-nav a {
+  text-decoration: none;
+  color: #0f4662;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 0.9;
+  transition: 0.25s;
+  
+}
+
+.hero-nav a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* ✅ MENU BTN (Mobile) */
+.menu-btn {
+  display: none;
+  font-size: 26px;
+  background: transparent;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+/* ✅ RESPONSIVE NAV */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .hero-nav {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 14px 16px;
+    border-radius: 14px;
+    flex-direction: column;
+    gap: 12px;
+    display: none;
+  }
+
+  .hero-nav.active {
+    display: flex;
+  }
+}
+
+/* ✅ Social icons default (desktop) */
+.hero-socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-socials a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #0f4662;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.hero-socials a:hover {
+  background: rgba(193, 203, 223, 0.836);
+  color: rgba(20, 28, 45, 0.836);
+  transform: translateY(-3px);
+}
+
+/* ✅ Hamburger hidden on desktop */
+.menu-btn {
+  display: none;
+  font-size: 26px;
+  background: transparent;
+  border: none;
+  color: #0f4662;
+  cursor: pointer;
+}
+
+/* ✅ Mobile view */
+@media (max-width: 768px) {
+
+  /* show hamburger */
+  .menu-btn {
+    display: block;
+  }
+
+  /* hide socials by default */
+  .hero-socials {
+    position: absolute;
+        top: 57px;
+        right: 37px;
+        display: none;
+        flex-direction: column;
+        gap: 14px;
+        padding: 14px;
+        border-radius: 16px;
+        background: #0f46620a;
+        backdrop-filter: blur(12px);
+  }
+  /* when active -> show socials */
+  .hero-socials.active {
+    display: flex;
+  }
+}
+
+
+
+/* main text styles
+ */
+.leaf{
+    position:absolute ;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.leaf div{
+position:absolute ;
+display:block ;
+}
+.leaf div:nth-child(1){
+    left:10%; 
+    animation:fall 17s linear infinite ;
+    animation-delay:-2s;
+
+}
+.leaf div:nth-child(2){
+    right:0%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+.leaf div:nth-child(3){
+    left:70%; 
+    animation:fall 20s linear infinite ;
+    animation-delay:-7s;
+    
+}
+.leaf div:nth-child(4){
+    left:40%; 
+   animation:fall 11s linear infinite ; 
+   animation-delay:-5s;
+}
+
+@keyframes fall{
+    0%{
+        opacity:1;
+        top:-10%;
+        transform:translateX (20px) rotate(0deg);
+    }
+    30%{
+        opacity:0.8;
+        transform:translateX (-20px) rotate(45deg);
+    }
+    50%{
+
+        transform:translateX (-20px) rotate(90deg);
+    }
+    70%{
+        
+       transform:translateX (-20px) rotate(135deg); 
+    }
+    90%{
+    
+        transform:translateX (-20px) rotate(180deg);
+    }
+    100%{
+        
+        top:110%;
+        transform:translateX (-20px) rotate(225deg);
+    }
+    }
+.leaf1{
+    transform: rotateX(180deg);
+}
