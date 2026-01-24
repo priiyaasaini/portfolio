@@ -52,7 +52,6 @@
 }
 .resumeBtn:hover{
   transform: translateY(-3px);
-  background-color: #24617f65;
   text-decoration: none;
   cursor: pointer;
 }
